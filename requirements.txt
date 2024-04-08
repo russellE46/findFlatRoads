@@ -2,5 +2,3 @@ overpy
 pandas
 pydeck
 requests
-
-streamlit==0.74.0
