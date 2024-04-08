@@ -2,6 +2,3 @@ overpy
 pandas
 pydeck
 requests
-io
-json
-statistics
