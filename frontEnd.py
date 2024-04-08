@@ -185,8 +185,9 @@ view_state = pdk.ViewState(
     longitude=st.session_state.origLon,
     zoom=13,
     height = 850,
-    width = 850
+    width = "110%"
 )
+
 
 r = pdk.Deck(layers=[layer, radiusLayer], initial_view_state=view_state, tooltip={'text': '{name}'})
 st.pydeck_chart(r)
