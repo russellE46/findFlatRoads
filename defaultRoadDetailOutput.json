@@ -1,0 +1,209 @@
+[{
+    "Seg ID": 0,
+    "Road Name": "Village Parkway",
+    "Max Elev \ud835\udeab": 2.9634,
+    "Max Elev \ud835\udeab (abs)": 2.9634,
+    "Length ( ft)": 1380.91,
+    "Start Coordinates": "37.7254671, -121.9289269",
+    "End Coordinates": "37.7221313, -121.9266651"
+},{
+    "Seg ID": 1,
+    "Road Name": "Village Parkway",
+    "Max Elev \ud835\udeab": 2.7155,
+    "Max Elev \ud835\udeab (abs)": 2.7155,
+    "Length ( ft)": 1360.19,
+    "Start Coordinates": "37.7064928, -121.9239402",
+    "End Coordinates": "37.7095921, -121.9265600"
+},{
+    "Seg ID": 2,
+    "Road Name": "Village Parkway",
+    "Max Elev \ud835\udeab": 1.3513,
+    "Max Elev \ud835\udeab (abs)": 1.3513,
+    "Length ( ft)": 1378.69,
+    "Start Coordinates": "37.7185078, -121.9266113",
+    "End Coordinates": "37.7147371, -121.9269310"
+},{
+    "Seg ID": 3,
+    "Road Name": "Amador Valley Boulevard",
+    "Max Elev \ud835\udeab": 1.2748,
+    "Max Elev \ud835\udeab (abs)": 1.2748,
+    "Length ( ft)": 1394.32,
+    "Start Coordinates": "37.7149301, -121.9188777",
+    "End Coordinates": "37.7126180, -121.9227248"
+},{
+    "Seg ID": 4,
+    "Road Name": "Dublin Boulevard",
+    "Max Elev \ud835\udeab": 5.3693,
+    "Max Elev \ud835\udeab (abs)": 5.3693,
+    "Length ( ft)": 1431.82,
+    "Start Coordinates": "37.7021151, -121.9356709",
+    "End Coordinates": "37.7007754, -121.9403335"
+},{
+    "Seg ID": 5,
+    "Road Name": "Johnson Drive",
+    "Max Elev \ud835\udeab": -2.1826,
+    "Max Elev \ud835\udeab (abs)": 2.1826,
+    "Length ( ft)": 1401.83,
+    "Start Coordinates": "37.6927255, -121.9183016",
+    "End Coordinates": "37.6963989, -121.9197268"
+},{
+    "Seg ID": 6,
+    "Road Name": "Johnson Drive",
+    "Max Elev \ud835\udeab": 1.1204,
+    "Max Elev \ud835\udeab (abs)": 1.1204,
+    "Length ( ft)": 1398.13,
+    "Start Coordinates": "37.6939300, -121.9187690",
+    "End Coordinates": "37.6975960, -121.9201809"
+},{
+    "Seg ID": 7,
+    "Road Name": "Davona Drive",
+    "Max Elev \ud835\udeab": 1.1515,
+    "Max Elev \ud835\udeab (abs)": 1.1515,
+    "Length ( ft)": 1382.46,
+    "Start Coordinates": "37.7257615, -121.9397563",
+    "End Coordinates": "37.7289217, -121.9424004"
+},{
+    "Seg ID": 8,
+    "Road Name": "Donald D Doyle Highway",
+    "Max Elev \ud835\udeab": -3.5756,
+    "Max Elev \ud835\udeab (abs)": 3.5756,
+    "Length ( ft)": 1470.73,
+    "Start Coordinates": "37.7132753, -121.9316936",
+    "End Coordinates": "37.7098148, -121.9290792"
+},{
+    "Seg ID": 9,
+    "Road Name": "Donald D Doyle Highway",
+    "Max Elev \ud835\udeab": -3.4569,
+    "Max Elev \ud835\udeab (abs)": 3.4569,
+    "Length ( ft)": 1452.33,
+    "Start Coordinates": "37.7165543, -121.9344407",
+    "End Coordinates": "37.7198639, -121.9372377"
+},{
+    "Seg ID": 10,
+    "Road Name": "San Ramon Road",
+    "Max Elev \ud835\udeab": -2.728,
+    "Max Elev \ud835\udeab (abs)": 2.728,
+    "Length ( ft)": 1464.7,
+    "Start Coordinates": "37.7093820, -121.9379810",
+    "End Coordinates": "37.7132579, -121.9393050"
+},{
+    "Seg ID": 11,
+    "Road Name": "Alcosta Boulevard",
+    "Max Elev \ud835\udeab": -1.7339,
+    "Max Elev \ud835\udeab (abs)": 1.7339,
+    "Length ( ft)": 1396.43,
+    "Start Coordinates": "37.7297460, -121.9316251",
+    "End Coordinates": "37.7267427, -121.9346257"
+},{
+    "Seg ID": 12,
+    "Road Name": "Dougherty Road",
+    "Max Elev \ud835\udeab": -5.0898,
+    "Max Elev \ud835\udeab (abs)": 5.0898,
+    "Length ( ft)": 1426.92,
+    "Start Coordinates": "37.7082246, -121.9102069",
+    "End Coordinates": "37.7121344, -121.9103478"
+},{
+    "Seg ID": 13,
+    "Road Name": "Dougherty Road",
+    "Max Elev \ud835\udeab": -0.3809,
+    "Max Elev \ud835\udeab (abs)": 0.3809,
+    "Length ( ft)": 1464.22,
+    "Start Coordinates": "37.7071514, -121.9103604",
+    "End Coordinates": "37.7111627, -121.9101880"
+},{
+    "Seg ID": 14,
+    "Road Name": "Dougherty Road",
+    "Max Elev \ud835\udeab": -8.9448,
+    "Max Elev \ud835\udeab (abs)": 8.9448,
+    "Length ( ft)": 1424.6,
+    "Start Coordinates": "37.7127429, -121.9101592",
+    "End Coordinates": "37.7166478, -121.9101207"
+},{
+    "Seg ID": 15,
+    "Road Name": "Dougherty Road",
+    "Max Elev \ud835\udeab": -9.4243,
+    "Max Elev \ud835\udeab (abs)": 9.4243,
+    "Length ( ft)": 1343.56,
+    "Start Coordinates": "37.7143008, -121.9101479",
+    "End Coordinates": "37.7179833, -121.9100825"
+},{
+    "Seg ID": 16,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": 0.3846,
+    "Max Elev \ud835\udeab (abs)": 0.3846,
+    "Length ( ft)": 1344.86,
+    "Start Coordinates": "37.6828402, -121.9037207",
+    "End Coordinates": "37.6865260, -121.9036340"
+},{
+    "Seg ID": 17,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": 0.5293,
+    "Max Elev \ud835\udeab (abs)": 0.5293,
+    "Length ( ft)": 1364.08,
+    "Start Coordinates": "37.6865260, -121.9036340",
+    "End Coordinates": "37.6902650, -121.9035943"
+},{
+    "Seg ID": 18,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": -0.6643,
+    "Max Elev \ud835\udeab (abs)": 0.6643,
+    "Length ( ft)": 1437.15,
+    "Start Coordinates": "37.6881242, -121.9036208",
+    "End Coordinates": "37.6920634, -121.9035677"
+},{
+    "Seg ID": 19,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": -0.6643,
+    "Max Elev \ud835\udeab (abs)": 0.6643,
+    "Length ( ft)": 1445.15,
+    "Start Coordinates": "37.6891131, -121.9036100",
+    "End Coordinates": "37.6930740, -121.9035339"
+},{
+    "Seg ID": 20,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": -0.6268,
+    "Max Elev \ud835\udeab (abs)": 0.6268,
+    "Length ( ft)": 1463.95,
+    "Start Coordinates": "37.6902650, -121.9035943",
+    "End Coordinates": "37.6942772, -121.9035018"
+},{
+    "Seg ID": 21,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": -1.0672,
+    "Max Elev \ud835\udeab (abs)": 1.0672,
+    "Length ( ft)": 1467.01,
+    "Start Coordinates": "37.6930740, -121.9035339",
+    "End Coordinates": "37.6970950, -121.9034752"
+},{
+    "Seg ID": 22,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": 0.7842,
+    "Max Elev \ud835\udeab (abs)": 0.7842,
+    "Length ( ft)": 1463.42,
+    "Start Coordinates": "37.6955937, -121.9037246",
+    "End Coordinates": "37.6915827, -121.9037986"
+},{
+    "Seg ID": 23,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": 0.7461,
+    "Max Elev \ud835\udeab (abs)": 0.7461,
+    "Length ( ft)": 1434.39,
+    "Start Coordinates": "37.6920558, -121.9037892",
+    "End Coordinates": "37.6881242, -121.9038444"
+},{
+    "Seg ID": 24,
+    "Road Name": "Hopyard Road",
+    "Max Elev \ud835\udeab": -2.013,
+    "Max Elev \ud835\udeab (abs)": 2.013,
+    "Length ( ft)": 1344.74,
+    "Start Coordinates": "37.6851220, -121.9038741",
+    "End Coordinates": "37.6814389, -121.9040621"
+},{
+    "Seg ID": 25,
+    "Road Name": "Foothill Road",
+    "Max Elev \ud835\udeab": 5.7315,
+    "Max Elev \ud835\udeab (abs)": 5.7315,
+    "Length ( ft)": 1368.16,
+    "Start Coordinates": "37.6894758, -121.9306924",
+    "End Coordinates": "37.6929074, -121.9326043"
+}]
