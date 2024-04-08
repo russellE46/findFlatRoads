@@ -185,28 +185,28 @@ def getRoads(lowLat, leftLong, highLat, rightLong, pBar, p):
             (._;>;);
             out body;
             """ % (str(lowLat), str(leftLong), str(highLat), str(rightLong),))
-        p += 4
+        p += 1
         pBar.progress(p, "Getting coordinates...")
         motorwayResult = api.query("""
             way(%s,%s,%s,%s) ["highway" = "motorway"];
             (._;>;);
             out body;
             """ % (str(lowLat), str(leftLong), str(highLat), str(rightLong),))
-        p += 4
+        p += 1
         pBar.progress(p, "Getting coordinates...")
         secondaryResult = api.query("""
             way(%s,%s,%s,%s) ["highway" = "secondary"];
             (._;>;);
             out body;
             """ % (str(lowLat), str(leftLong), str(highLat), str(rightLong),))
-        p += 4
+        p += 1
         pBar.progress(p, "Getting coordinates...")
         primaryResult = api.query("""
             way(%s,%s,%s,%s) ["highway" = "primary"];
             (._;>;);
             out body;
             """ % (str(lowLat), str(leftLong), str(highLat), str(rightLong),))
-        p += 4
+        p += 1
         pBar.progress(p, "Sorting coordinates...")
     
     st.success("Retrieved road coordinates", icon='✔')
@@ -235,7 +235,7 @@ def getRoads(lowLat, leftLong, highLat, rightLong, pBar, p):
     roadsDict = {}
     with st.spinner("Grouping coordinates by road name"):
         for result in results:
-            p += 15/len(results)
+            p += 27/len(results)
             pBar.progress(int(p), "Sorting coordinates...")
             for way in result.ways:
                 wayName = way.tags.get("name", "n/a")
@@ -262,7 +262,7 @@ def getRoads(lowLat, leftLong, highLat, rightLong, pBar, p):
 
     with st.spinner("Ordering coordinates into road segments"):
         for road in roadsDict.keys():
-            p += 15/len(roadsDict)
+            p += 18/len(roadsDict)
             pBar.progress(int(p), "Sorting coordinates...")
             roadsDict[road] = combineSegments(roadsDict[road])
     st.success("Combined coordinates into road segments", icon='✔')
@@ -602,7 +602,7 @@ def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:i
         with st.spinner("Calculating bounding box"):
             bbox = calculate_bounding_box(lat, lon, radius)
         st.success("Bounding box calculated", icon='✔')
-        prog += 4
+        prog += 1
         progBar.progress(prog, "Getting coordinates...")
         print(prog)
     with st.status("Getting local road coordinates"):
