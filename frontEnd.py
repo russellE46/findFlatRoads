@@ -69,7 +69,7 @@ with st.sidebar:
         defaultMaxDistance = 460
         defaultMaxElevationChange = 4
         defaultMinRadius = 2.0
-        defaultMaxRadius = 15.0
+        defaultMaxRadius = 12.0
         defaultRadiusValue = 3.2
         rScale = 1050
         met = True
@@ -81,7 +81,7 @@ with st.sidebar:
         defaultMaxDistance = 1500
         defaultMaxElevationChange = 10
         defaultMinRadius = 1.0
-        defaultMaxRadius = 10.0
+        defaultMaxRadius = 8.0
         defaultRadiusValue = 1.8
         rScale = 1850
         met = False

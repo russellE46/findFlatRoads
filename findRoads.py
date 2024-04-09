@@ -608,7 +608,7 @@ def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:i
     with st.status("Getting local road coordinates"):
         print("getting road data")
         roadsDict = getRoads(bbox[0], bbox[1], bbox[2], bbox[3], progBar, prog)
-        prog += 56
+        prog += 55
         progBar.progress(prog, "Filtering for length...")
     with st.status("Filtering for length"):
         print("filtering for length")
