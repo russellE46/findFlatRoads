@@ -193,12 +193,14 @@ st.pydeck_chart(r)
 
 if "roadDetails" in st.session_state:
     try:
+        st.caption("Click on a column title to sort by that attribute")
         detailDf = pd.read_json(st.session_state.roadDetails)
         st.dataframe(data=detailDf, hide_index=True, use_container_width=True, height=500)
     except Exception as e:
         detailDf = []
 else:
     try:
+        st.caption("Click on a column title to sort by that attribute")
         detailDf = pd.read_json("defaultRoadDetailOutput.json")
         st.dataframe(data=detailDf, hide_index=True, use_container_width=True, height=500)
     except Exception as e:
