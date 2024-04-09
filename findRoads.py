@@ -235,7 +235,7 @@ def getRoads(lowLat, leftLong, highLat, rightLong, pBar, p):
     roadsDict = {}
     with st.spinner("Grouping coordinates by road name"):
         for result in results:
-            p += 27/len(results)
+            p += 18/len(results)
             pBar.progress(int(p), "Sorting coordinates...")
             for way in result.ways:
                 wayName = way.tags.get("name", "n/a")
@@ -262,7 +262,7 @@ def getRoads(lowLat, leftLong, highLat, rightLong, pBar, p):
 
     with st.spinner("Ordering coordinates into road segments"):
         for road in roadsDict.keys():
-            p += 18/len(roadsDict)
+            p += 33/len(roadsDict)
             pBar.progress(int(p), "Sorting coordinates...")
             roadsDict[road] = combineSegments(roadsDict[road])
     st.success("Combined coordinates into road segments", icon='✔')
@@ -299,7 +299,7 @@ def countSegments(filteredRoadsDict):
     return totalSegments
 
 def filterRoadsMinLength(roadsDict, minLength, maxLength, pBar, p):
-    progAddition = 5
+    progAddition = 2
     roadsDictMinLen = {}
     with st.spinner("Slicing roads into segments of requested length"):
         for road in roadsDict.keys():
@@ -387,7 +387,7 @@ def is_straight_road(coordinates, tolerance):
     return True
 
 def filterRoadsStraightness(roadsDict, roadSegmentsMinLen, straightTol, pBar, p):
-    progAddition = 5
+    progAddition = 2
     roadsDictStraightSegs = {}
     with st.spinner("Checking road segments for straightness"):
         for road in roadSegmentsMinLen.keys():
@@ -608,17 +608,17 @@ def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:i
     with st.status("Getting local road coordinates"):
         print("getting road data")
         roadsDict = getRoads(bbox[0], bbox[1], bbox[2], bbox[3], progBar, prog)
-        prog += 46
+        prog += 56
         progBar.progress(prog, "Filtering for length...")
     with st.status("Filtering for length"):
         print("filtering for length")
         roadSegmentsMinLen = filterRoadsMinLength(roadsDict, minDistance, maxDistance, progBar, prog)
-        prog += 5
+        prog += 2
         progBar.progress(prog, "Filtering for straightness...")
     with st.status("Filtering for straightness"):
         print("filtering for straightness")
         roadsDictStraightSegs = filterRoadsStraightness(roadsDict, roadSegmentsMinLen, reqStraightness, progBar, prog)
-        prog += 5
+        prog += 2
         progBar.progress(prog, "Filtering for flatness...")
     with st.status("Filtering for flatness", expanded=True) as status:
         print("filtering for flatness")
