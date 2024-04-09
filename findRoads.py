@@ -585,6 +585,7 @@ def countSegments(filteredRoadsDict):
     return count
 
 def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:int, reqStraightness:float, maxElevChange:int, metricTog:bool):
+    st.session_state.pressed = True
     progBar = st.progress(0, "Working...")
     prog = 0
 

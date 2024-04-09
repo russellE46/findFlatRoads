@@ -149,24 +149,8 @@ if "pressed" not in st.session_state:
     st.markdown(tab + "• Some road segments will be displayed as shorter than they actually are. This is a known bug.")
     st.markdown(tab + "• I am not responsible for what you do with the information provided by this website.")
     st.divider()
-    st.header("Example Results:")
 else:
-    if not st.session_state.pressed:
-        st.title("Welcome!")
-        st.markdown("Level is a tool to help you find flat and/or straight roads in your area.")
-        st.markdown("Simply enter your location and desired road characteristics.")
-        st.divider()
-        st.markdown("Some notes:")
-        st.markdown(tab + "• Residential roads will NOT be included in these searches.")
-        st.markdown(tab + "• You can enter coordinates into Google maps, Apple Maps, etc.")
-        st.markdown(tab + "• The more restrictive your search criteria is, the faster results will be returned.")
-        st.markdown(tab + tab + "-- For example, requesting roads within a 2 mile radius will be much faster than requesting roads\n" + tab + tab + tab + "within a 10 mile radius")
-        st.markdown(tab + "• In a similar vein, this tool relies on a free public API for elevation data. Because of this, we can only\n" + tab + tab + "process 100 coordinates per second. Please be mindful of this.")
-        st.markdown(tab + "• Some road segments will be displayed as shorter than they actually are. This is a known bug.")
-        st.markdown(tab + "• I am not responsible for what you do with the information provided by this website.")
-        st.divider()
-    else:
-        st.title("Results:")
+    st.title("Results:")
 
 origin =[
     {
@@ -220,5 +204,6 @@ else:
     except Exception as e:
         detailDf = []
 
-st.session_state.pressed = st.sidebar.button(label="Find", on_click=findRoads.findRoads, args=(st.session_state.origLat,st.session_state.origLon,radius,minLength,
+
+st.sidebar.button(label="Find", on_click=findRoads.findRoads, args=(st.session_state.origLat,st.session_state.origLon,radius,minLength,
                                        maxLength,straightnessValues[straightness], maxElevChange, met))
