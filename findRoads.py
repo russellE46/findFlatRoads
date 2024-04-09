@@ -510,7 +510,7 @@ def mean_elevation(elevations):
     return statistics.mean(elevations)
 
 def filterRoadsFlatness(roadsDict, filteredRoadSegs, flatTol, pBar, p):
-    progAddition1 = 32
+    progAddition1 = 30
     progAddition2 = 5
     roadsDictFlatSegs = {}
 
