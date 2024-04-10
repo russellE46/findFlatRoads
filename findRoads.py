@@ -605,7 +605,6 @@ def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:i
         st.success("Bounding box calculated", icon='✔')
         prog += 1
         progBar.progress(prog, "Getting coordinates...")
-        print(prog)
     with st.status("Getting local road coordinates"):
         print("getting road data")
         roadsDict = getRoads(bbox[0], bbox[1], bbox[2], bbox[3], progBar, prog)
@@ -624,14 +623,15 @@ def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:i
     with st.status("Filtering for flatness", expanded=True) as status:
         print("filtering for flatness")
         roadsDictFlatSegs = filterRoadsFlatness(roadsDict, roadsDictStraightSegs, maxElevChange, progBar, prog)
-        print(prog)
         status.update(expanded = False)
         prog += 40
         progBar.progress(prog, "Done!")
 
-    befDupFilter = countSegments(roadsDictFlatSegs)
+    if debug:
+        befDupFilter = countSegments(roadsDictFlatSegs)
     filterDuplicates(roadsDict, roadsDictFlatSegs, minDistance)
-    aftDupFilter = countSegments(roadsDictFlatSegs)
+    if debug:
+        aftDupFilter = countSegments(roadsDictFlatSegs)
 
     if debug:
         print("Before: " + str(befDupFilter))
@@ -701,6 +701,18 @@ def findRoads(lat:float, lon:float, radius:float, minDistance:int, maxDistance:i
 
     print("done")
 
+    try:
+        with open("counter.txt", "r") as f:
+            count = f.read()
+            count = int(count)
+            count += 1
+            print("Use count: " + str(count))
+            
+        with open("counter.txt", "w") as f:
+            f.write(str(count))
+    except Exception as e:
+        print("Error: " + str(e))
+    
 
 if __name__ == "__main__":
     if debug:

@@ -37,7 +37,8 @@ def get_coordinates(address, postal_code, api_key):
             return (data[0]['lat'], data[0]['lon'])
 
     # If the request was unsuccessful, print an error message
-    print("Error:", response.status_code)
+    else:
+        print("Error:", response.status_code)
     return (37.7009640, -121.9226350)
 
 def hex_to_rgb(h):
